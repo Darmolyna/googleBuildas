@@ -1,54 +1,62 @@
-# googleBuildas
-Cypress Automation Testing - README 
 
-This project covers UI testing using: 
+## Cypress Automation Test for BUILDAS - README
 
-Cypress – for browser-based UI and API automation 
+This project covers UI testing using:  
+**Cypress** – for browser-based UI testing
 
- Prerequisites 
+---
 
-Before you begin, ensure the following tools are installed on your system: 
+## 🛠️ Prerequisites
 
+Before you begin, ensure the following tools are installed on your system:
 
-Node.js v18 or above 
+1. **Node.js** v18 or above  
+2. **VS Code** (Latest version)
 
-VS Code Latest 
+---
 
- 
-Getting Started 
+## 🚀 Getting Started
 
-1. Open Visual Studio Code 
+### 1. Open Visual Studio Code
 
-Launch Visual Studio Code on your system. 
+- Launch Visual Studio Code on your system.  
+- Navigate to the folder you want to download the project in, e.g.:  
+  ```bash
+  cd user/documents
+  ```  
+- Open a new terminal in VS Code (`Ctrl + ~` or go to **Terminal > New Terminal**).
 
-Navigate to the folder you want to download the project in e.g. cd user/documents 
+### 2. Clone the Repository
 
-Open a new terminal in VS Code (Ctrl + ~ or go to Terminal > New Terminal). 
+In the terminal, run the following commands to clone the project and navigate into the folder:
 
-2. Clone the Repository 
+```bash
+git clone https://github.com/Darmolyna/googleBuildas
+cd googleBuildas
+```
 
-In the terminal, run the following commands to clone the project and navigate into the folder: 
+### 3. Install All Dependencies
 
-git clone https://github.com/Darmolyna/googleBuildas    (this clones the project) 
-cd googleBuildas  (this navigates to the project folder from terminal) 
- 
+Install all required dependencies (like Cypress) listed in `package.json`:
 
-3. Install All Dependencies 
+```bash
+npm install
+```
 
-Run the command below to install all required dependencies (like Cypress) listed in package.json: 
+---
 
-npm install 
+## ✅ Running Cypress Tests
 
- 
+### Option 1: Run Cypress in Interactive Mode (UI)
 
-Running Cypress Tests 
+```bash
+npx cypress open
+```
 
-Option 1: Run Cypress in Interactive Mode (UI) 
+This opens the Cypress Test Runner for manual test execution.
 
-npx cypress open 
+### Option 2: Run Cypress Tests in CLI (Headless)
 
-This opens the Cypress Test Runner for manual test execution. 
-
-Option 2: Run Cypress Tests in CLI (Headless) 
-
-npx cypress run 
+```bash
+npx cypress run
+```
